@@ -8,6 +8,7 @@ Exercise 1 has been completed for you:
 
 const foods = [];  
 
+
 console.log('Exercise 1 result:', foods);
 
 /*
@@ -50,8 +51,7 @@ Exercise 4: Access an array element
 Complete Exercise 4 in the space below:
 */
 
-let i = foods.indexOf("pizza")
-let favFood = foods[i]
+let favFood = foods[foods.indexOf("pizza")]
 
 console.log('Exercise 4 result:', favFood);
 
@@ -108,9 +108,7 @@ Exercise 8: Finding an index
 Complete Exercise 8 in the space below:
 */
 
-let y = foods.indexOf("tofu")
-
-soyIdx = foods[y]
+let soyIdx = foods.indexOf("tofu")
 
 console.log('Exercise 8 result:', soyIdx);
 
@@ -194,22 +192,16 @@ const fizz=[]
 const buzz=[]
 const fizzbuzz=[]
 for (let i=0; i<nums.length; i++){
-    if (nums[i] % 3 == 0 && nums[i] % 5 == 0){
-        fizzbuzz.push(nums[i])
-    }
-    else if (nums[i] % 5 == 0){
+   if (nums[i] % 3 == 0 && nums[i] % 5 == 0){
+      fizzbuzz.push(nums[i])
+      }
+   if (nums[i] % 3 == 0 ){
+      fizz.push(nums[i])
+      }
+   if (nums[i] % 5 == 0){
         buzz.push(nums[i])
-    }
-    else if (nums[i] % 3 == 0){
-        fizz.push(nums[i])
-    }
-    else{
-        console.log( "not divisable by 3 or 5")
-    }
-
+      }
 }
-
-
 console.log('Exercise 12 Results:');
 console.log('  fizz:', fizz);
 console.log('  buzz:', buzz);
